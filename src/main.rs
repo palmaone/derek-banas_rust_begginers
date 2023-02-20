@@ -10,15 +10,12 @@ fn main() {
     let random_num = rand::thread_rng().gen_range(1..101);
     println!("Random: {}", random_num);
 
-    let age: i32 = 8;
-    if (age >= 1) && (age <=18) {
-        println!("Impórtant Bday!");
-    } else if (age == 21) || (age == 50) {
-        println!("Impórtant Bday!");
-    } else if age >= 65 {
-        println!("Impórtant Bday!");
-    }else{
-        println!("NOT AN Impórtant Bday!");
-    }
+    let mut my_age = 47;
+    
+    let can_vote = if my_age >= 18 {
+        true //return true
+    } else { false };
+
+    println!("Can vote:{}", can_vote)
     
 }
