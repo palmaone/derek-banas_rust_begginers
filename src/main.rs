@@ -7,22 +7,18 @@ use std::fs::File;
 use std::cmp::Ordering;
 
 fn main() {
-    //Unsigned integers: u8, u16, u32, u64, u128, usize
-    //Signed integers: i8, i16, i32, i64, i128, isize
-    println!("Max u32 : {}", u32::MAX);
-    println!("Max u64 : {}", u64::MAX);
-    println!("Max u128 : {}", u128::MAX);
-    println!("Max usize : {}", usize::MAX);
-    println!("Max f32 : {}", f32::MAX);
+    let random_num = rand::thread_rng().gen_range(1..101);
+    println!("Random: {}", random_num);
 
-    let _is_true = true; //allow unused by prepending an underscore
-    let is_true = true;
-    let my_grade = 'A';
-
-    let num_1: f32 = 1.111111111111111;
-    println!("f32:{}", num_1 + 0.111111111111111);
-
-    let num_2: f64 = 1.111111111111111;
-    println!("f64:{}", num_2 + 0.111111111111111);
+    let age: i32 = 8;
+    if (age >= 1) && (age <=18) {
+        println!("Impórtant Bday!");
+    } else if (age == 21) || (age == 50) {
+        println!("Impórtant Bday!");
+    } else if age >= 65 {
+        println!("Impórtant Bday!");
+    }else{
+        println!("NOT AN Impórtant Bday!");
+    }
     
 }
